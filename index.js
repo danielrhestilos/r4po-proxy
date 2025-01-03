@@ -53,7 +53,9 @@ app.post("/generate-qr", async (req, res) => {
       },
       body: JSON.stringify(body),
     });
-    console.log("response: ",response);
+    console.log("body: ",body);
+    
+    console.log("response: ",response);                                                                        
     
     const dataQr = await response.json();
     console.log("dataQr: ",dataQr);
